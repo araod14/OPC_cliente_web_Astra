@@ -1,0 +1,393 @@
+<!doctype html>
+<html>
+<head>
+<script src="{{ url_for('static', filename='js/main.js') }}"></script>
+<link rel="stylesheet" href="{{ url_for('static', filename='styles/main.css') }}">
+<title>Astra OPC cliente</title>
+</head>
+<body>
+
+	<header class="header">
+		<div class="title">
+			<h1 class="title-header">Cliente OPC Web</h1>
+		</div>
+		<div class="logo-header">
+			<img src="{{ url_for('static', filename='pdvsa.png')}}" alt="logo" class="logo">
+		</div>
+    </header>
+
+	
+	<main>
+        <nav class="menu">
+			<div class="menu-button">
+				<a href="/" class="btn-menu">Variables</a>
+			</div>
+			<div class="menu-button">
+				<a href="/" class="btn-menu">Status</a>
+			</div>
+			<div class="menu-button">
+				<a href="/" class="btn-menu">Grafico</a>
+			</div>
+			<footer class="footer">
+				<p class="text-footer">Desarrollado por el equipo de Automatizacion Petro San Felix</p>
+			</footer>
+		</nav>
+        <div class="grafico">
+			<div class="valor1">
+				<div class="valor">
+					<p id="tag-value1">--</p>
+				</div>
+			</div>
+			<div class="valor2">
+				<div class="tag">
+					<p>Tn/D</p>
+				</div>
+			</div>
+			<div class="valor3"></div>
+			<div class="valor4"></div>
+			<div class="valor5"></div>
+			<div class="valor6"></div>
+			<div class="valor7"></div>
+			<div class="valor8"></div>
+			<div class="valor9"></div>
+			<div class="valor10"></div>
+			<div class="valor11"></div>
+			<div class="valor12"></div>
+			<div class="valor13"></div>
+			<div class="valor14"></div>
+			<div class="valor15"></div>
+			<div class="valor16"></div>
+			<div class="valor17"></div>
+			<div class="valor18"></div>
+			<div class="valor19"></div>
+			<div class="valor20"></div>
+			<div class="valor21">
+				<div class="valor">
+					<p id="tag-value24">--</p>
+				</div>
+			</div>
+			<div class="valor22">
+				<div class="tag">
+					<p>TIC</p>
+				</div>
+			</div>
+			<div class="valor23">
+				<div class="valor">
+					<p id="tag-value23">--</p>
+				</div>
+			</div>
+			<div class="valor24">
+				<div class="tag">
+					<p>PIC</p>
+				</div>
+			</div>
+			<div class="valor25"></div>
+			<div class="valor26"></div>
+			<div class="valor27"></div>
+			<div class="valor28">
+				<div class="valor">
+					<p id="tag-value22">--</p>
+				</div>
+			</div>
+			<div class="valor29">
+				<div class="tag">
+					<p>Deg°C</p>
+				</div>
+			</div>
+			<div class="valor30">
+				<div class="valor">
+					<p id="tag-value9">--</p>
+				</div>
+			</div>
+			<div class="valor31">
+				<div class="tag">
+					<p>Deg°C</p>
+				</div>
+			</div>
+			<div class="valor32"></div>
+			<div class="valor33"></div>
+			<div class="valor34">
+				<div class="valor">
+					<p id="tag-value25">--</p>
+				</div>
+			</div>
+			<div class="valor35">
+				<div class="tag">
+					<p>TN/H</p>
+				</div>
+			</div>
+			<div class="valor36"></div>
+			<div class="valor37"></div>
+			<div class="valor38"></div>
+			<div class="valor39"></div>
+			<div class="valor40"></div>
+			<div class="valor41"></div>
+			<div class="valor42">
+				<div class="valor">
+					<p id="tag-value10">--</p>
+				</div>
+			</div>
+			<div class="valor43">
+				<div class="tag">
+					<p>Barg</p>
+				</div>
+			</div>
+			<div class="valor44"></div>
+			<div class="valor45"></div>
+			<div class="valor46">
+				<div class="valor">
+					<p id="tag-value26">--</p>
+				</div>
+			</div>
+			<div class="valor47">
+				<div class="tag">
+					<p>Barg</p>
+				</div>
+			</div>
+			<div class="valor48"></div>
+			<div class="valor49"></div>
+			<div class="valor50"></div>
+			<div class="valor51">
+				<div class="valor">
+					<p id="tag-value2">--</p>
+				</div>
+			</div>
+			<div class="valor52">
+				<div class="tag">
+					<p>%</p>
+				</div>
+			</div>
+			<div class="valor53"></div>
+			<div class="valor54"></div>
+			<div class="valor55">
+				<div class="valor">
+					<p id="tag-value21">--</p>
+				</div>
+			</div>
+			<div class="valor56">
+				<div class="tag">
+					<p>LIC</p>
+				</div>
+			</div>
+			<div class="valor57">
+				<div class="valor">
+					<p id="tag-value20">--</p>
+				</div>
+			</div>
+			<div class="valor58">
+				<div class="tag">
+					<p>AXC</p>
+				</div>
+			</div>
+			<div class="valor59"></div>
+			<div class="valor60"></div>
+			<div class="valor61"></div>
+			<div class="valor62"></div>
+			<div class="valor63">
+				<div class="valor">
+					<p id="tag-value3">--</p>
+				</div>
+			</div>
+			<div class="valor64">
+				<div class="tag">
+					<p>mmH2O</p>
+				</div>
+			</div>
+			<div class="valor65"></div>
+			<div class="valor66"></div>
+			<div class="valor67">
+				<div class="valor">
+					<p id="tag-value11">--</p>
+				</div>
+			</div>
+			<div class="valor68">
+				<div class="tag">
+					<p>Deg°C</p>
+				</div>
+			</div>
+			<div class="valor69"></div>
+			<div class="valor70"></div>
+			<div class="valor71"></div>
+			<div class="valor72"></div>
+			<div class="valor73"></div>
+			<div class="valor74"></div>
+			<div class="valor75">
+				<div class="valor">
+					<p id="tag-value4">--</p>
+				</div>
+			</div>
+			<div class="valor76">
+				<div class="tag">
+					<p>mmH2O</p>
+				</div>
+			</div>
+			<div class="valor77"></div>
+			<div class="valor78"></div>
+			<div class="valor79">
+				<div class="valor">
+					<p id="tag-value12">--</p>
+				</div>
+			</div>
+			<div class="valor80">
+				<div class="tag">
+					<p>Deg°C</p>
+				</div>
+			</div>
+			<div class="valor81">
+				<div class="valor">
+					<p id="tag-value19">--</p>
+				</div>
+			</div>
+			<div class="valor82">
+				<div class="tag">
+					<p>RPM</p>
+				</div>
+			</div>
+			<div class="valor83"></div>
+			<div class="valor84"></div>
+			<div class="valor85"></div>
+			<div class="valor86"></div>
+			<div class="valor87">
+				<div class="valor">
+					<p id="tag-value5">--</p>
+				</div>
+			</div>
+			<div class="valor88">
+				<div class="tag">
+					<p>Deg °C</p>
+				</div>
+			</div>
+			<div class="valor89"></div>
+			<div class="valor90"></div>
+			<div class="valor91">
+				<div class="valor">
+					<p id="tag-value13">--</p>
+				</div>
+			</div>
+			<div class="valor92">
+				<div class="tag">
+					<p>mmH2O</p>
+				</div>
+			</div>
+			<div class="valor93">
+				<div class="valor">
+					<p id="tag-value18">--</p>
+				</div>
+			</div>
+			<div class="valor94">
+				<div class="tag">
+					<p>AIC</p>
+				</div>
+			</div>
+			<div class="valor95"></div>
+			<div class="valor96"></div>
+			<div class="valor97"></div>
+			<div class="valor98"></div>
+			<div class="valor99">
+				<div class="valor">
+					<p id="tag-value6">--</p>
+				</div>
+			</div>
+			<div class="valor100">
+				<div class="tag">
+					<p>mmH2O</p>
+				</div>
+			</div>
+			<div class="valor101"></div>
+			<div class="valor102"></div>
+			<div class="valor103"></div>
+			<div class="valor104">
+				<div class="valor">
+					<p id="tag-value17">--</p>
+				</div>
+			</div>
+			<div class="valor105">
+				<div class="tag">
+					<p>Deg°C</p>
+				</div>
+			</div>
+			<div class="valor106"></div>
+			<div class="valor107"></div>
+			<div class="valor108"></div>
+			<div class="valor109"></div>
+			<div class="valor110"></div>
+			<div class="valor111">
+				<div class="valor">
+					<p id="tag-value7">--</p>
+				</div>
+			</div>
+			<div class="valor112">
+				<div class="tag">
+					<p>mmH2O</p>
+				</div>
+			</div>
+			<div class="valor113"></div>
+			<div class="valor114">
+				<div class="valor">
+					<p id="tag-value15">--</p>
+				</div>
+			</div>
+			<div class="valor115">
+				<div class="tag">
+					<p>FIC</p>
+				</div>
+			</div>
+			<div class="valor116">
+				<div class="valor">
+					<p id="tag-value16">--</p>
+				</div>
+			</div>
+			<div class="valor117">
+				<div class="tag">
+					<p>FIC</p>
+				</div>
+			</div>
+			<div class="valor118"></div>
+			<div class="valor119"></div>
+			<div class="valor120"></div>
+			<div class="valor121"></div>
+			<div class="valor122"></div>
+			<div class="valor123"></div>
+			<div class="valor124"></div>
+			<div class="valor125"></div>
+			<div class="valor126"></div>
+			<div class="valor127"></div>
+			<div class="valor128"></div>
+			<div class="valor129"></div>
+			<div class="valor130"></div>
+			<div class="valor131"></div>
+			<div class="valor132"></div>
+			<div class="valor133"></div>
+			<div class="valor134">
+				<div class="valor">
+					<p id="tag-value8">--</p>
+				</div>
+			</div>
+			<div class="valor135">
+				<div class="tag">
+					<p>RPM</p>
+				</div>
+			</div>
+			<div class="valor136"></div>
+			<div class="valor137"></div>
+			<div class="valor138"></div>
+			<div class="valor139"></div>
+			<div class="valor140">
+				<div class="valor">
+					<p id="tag-value14">--</p>
+				</div>
+			</div>
+			<div class="valor141">
+				<div class="tag">
+					<p>TN/H</p>
+				</div>
+			</div>
+			<div class="valor142"></div>
+			<div class="valor143"></div>
+			<div class="valor144"></div>
+			
+		</div>
+        
+    </main>
+</body>
+</html>
