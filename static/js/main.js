@@ -28,6 +28,13 @@ function updateTagValue() {
         document.getElementById("tag-value24").innerText = data.tag24;
         document.getElementById("tag-value25").innerText = data.tag25;
         document.getElementById("tag-value26").innerText = data.tag26;
+		document.getElementById("tag-value27").innerText = data.tag27;
+		document.getElementById("tag-value28").innerText = data.tag28;
+		document.getElementById("tag-value29").innerText = data.tag29;
+		document.getElementById("tag-value30").innerText = data.tag30;
+		document.getElementById("tag-value31").innerText = data.tag31;
+		document.getElementById("tag-value32").innerText = data.tag32;
+		document.getElementById("tag-value33").innerText = data.tag33;
         });
      }
     setInterval(updateTagValue, 1000);

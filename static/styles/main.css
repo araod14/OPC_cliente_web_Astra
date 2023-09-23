@@ -82,51 +82,41 @@ main{
     background-repeat: no-repeat;
 	display: grid;
 	grid-template-columns: repeat(20, 1fr);
-	grid-template-rows: repeat(12, 1fr);
+	grid-template-rows: repeat(20, 1fr);
 	grid-column-gap: 0px;
 	grid-row-gap: 0px;
 }
 .valor{
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
-	justify-content: center;
-}
-.tag{
-	display: flex;
-	flex-direction: column;
-	align-items: flex-start;
-	justify-content: center;
-}
-.valor1{
-	padding-top: 8px;
+	
 }
 .valor2{
-	padding-top: 8px;
-}
-.valor75{
+	text-align: right;
+	padding-bottom:0px;
+	margin-bottom:0px;
 	padding-top:8px;
 }
-.valor76{
+.valor3{
+	padding-bottom:0px;
+	margin-bottom:0px;
 	padding-top:8px;
 }
-.valor30{
-	padding-top:11px;
+.valor64{
+	text-align: right;
 }
-.valor31{
-	padding-top:11px;
+.valor85{
+	text-align: right;
 }
-.valor23{
-	padding-left:30px;
-	margin-left:30px;
-	margin-right:0px;
-	padding-right:0px;
-	border:solid;
+.valor105{
+	text-align: right;
 }
-.valor24{
-	padding-left:25x;
-	margin-left:0px;
-	margin-right:0px;
-	padding-right:0px;
-	border:solid;
+.valor125{
+	text-align: right;
+}
+.valor145{
+	text-align: right;
+}
+.valor165{
+	text-align: right;
 }
